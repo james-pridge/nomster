@@ -25,5 +25,11 @@ font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book An
 .navbar {
   background: image_url('cork-wallet.png');
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #543023;
+  font-family: 'webfontregular', sans-serif;
+  font-size: 26px;
+
 }
