@@ -42,7 +42,7 @@ font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book An
     padding: 0.2em 0.5em;
     display: block;
     float: left;
-    margin-right: 2px; }
+    margin-right: 2px;}
   .digg_pagination .disabled {
     color: #999999;
     border: 1px solid #dddddd; }
@@ -59,14 +59,14 @@ font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book An
     .digg_pagination a:hover, .digg_pagination a:focus {
       color: #000033;
       border-color: #000033; }
-  .digg_pagination .page_info {
+  .digg_pagination .page_info.disabled {
     background: #2e6ab1;
     color: white;
     padding: 0.4em 0.6em;
     width: 20em;
     margin-bottom: 0.3em;
     text-align: center; }
-    .digg_pagination .page_info b {
+    .digg_pagination .page_info b.disabled {
       color: #000033;
       background: #6aa6ed;
       padding: 0.1em 0.25em; }
@@ -80,6 +80,3 @@ font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book An
     height: 1%; }
   *:first-child + html .digg_pagination {
     overflow: hidden; }
-  .digg_pagination {
-    display:table;
-    margin:0 auto; }

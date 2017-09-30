@@ -8,16 +8,14 @@
 
 <% end %>
 
- 
-
-
-
-<div class="digg_pagination">
+ <div class="container">
+  <div class="row">
+<div class="digg_pagination offset-5">
+  <div class="digg_pagination">
     <div class="page_info">
-      <%= page_entries_info @places %>
+      <%#= page_entries_info @places %>
     </div>
     <%= will_paginate @places, container: false %>
   </div>
 </div>
-
 
