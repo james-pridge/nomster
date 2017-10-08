@@ -53,3 +53,19 @@
 </div>
 </div>
 <br />
+
+<div class="booyah-box col-10 offset-1">
+<h1>Comments</h1>
+
+<% @place.comments.each do |comment| %>
+<br />
+<div>
+  <blockquote>
+    <b><%= comment.rating %></b> -
+      <%= comment.message %>
+    <small> &nbsp;by&nbsp;<%= comment.user.email %></small>
+  </blockquote>
+</div>
+<% end %>
+</div>
+<br />
