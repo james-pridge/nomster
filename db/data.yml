@@ -1,0 +1,223 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2017-10-10 02:57:21.416211'
+    - '2017-10-10 02:57:21.416211'
+
+---
+comments:
+  columns:
+  - id
+  - message
+  - rating
+  - user_id
+  - place_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - awesome place
+    - 5_stars
+    - 1
+    - 1
+    - '2017-10-10 03:24:38.45359'
+    - '2017-10-10 03:24:38.45359'
+
+---
+places:
+  columns:
+  - id
+  - name
+  - description
+  - address
+  - created_at
+  - updated_at
+  - user_id
+  - latitude
+  - longitude
+  records: 
+  - - 1
+    - Amplify Credit Union
+    - Friendly, Local and Great Checking & Saving Offers!
+    - 5001 183A Toll Rd, Suite O500, Cedar Park, TX 78613
+    - '2017-10-10 03:23:53.171217'
+    - '2017-10-10 03:23:53.171217'
+    - 1
+    - 30.5312902
+    - -97.8184368
+  - - 2
+    - Ashley's Playhouse
+    - Fantastic daycare for infants and kids. Fair rates and experienced staff!
+    - '13343 US-183 #200, Austin, TX 78750'
+    - '2017-10-10 03:45:44.050278'
+    - '2017-10-10 03:45:44.050278'
+    - 1
+    - 30.4458356
+    - -97.7854553
+  - - 3
+    - Bearden Automotive
+    - Good Car Mechanic Shop for Lexus and Toyota. Realiable, Affordable and Honest!
+    - 12402 Technology Blvd, Austin, TX 78727
+    - '2017-10-10 03:46:05.130756'
+    - '2017-10-10 03:46:05.130756'
+    - 1
+    - 30.4363562
+    - -97.7595401
+  - - 4
+    - Biolife Plasma Services
+    - A Great Place to Donate some Life Giving Plasma while you get Paid for your
+      time!
+    - 14415 Owen-Tech Blvd, Austin, TX 78728
+    - '2017-10-10 03:46:38.134606'
+    - '2017-10-10 03:46:38.134606'
+    - 1
+    - 30.4359199
+    - -97.6703035
+  - - 5
+    - Cedar Park Pediatrics
+    - A Great Place to take your Little Ones for all their Health Needs!
+    - '12171 W Parmer Ln #201, Cedar Park, TX 78613'
+    - '2017-10-10 03:47:00.175987'
+    - '2017-10-10 03:47:00.175987'
+    - 1
+    - 30.5225207
+    - -97.7751403
+  - - 6
+    - Enchanted Rock State Natural Area
+    - Great Hiking, Beautiful Views and Good Camping Spots!
+    - 16710 Ranch Road 965, Fredericksburg, TX 78624
+    - '2017-10-10 03:47:26.514672'
+    - '2017-10-10 03:47:26.514672'
+    - 1
+    - 30.4960308
+    - -98.8199654
+  - - 7
+    - Extra Space Storage
+    - Clean, Good Security with Plenty of Storage Options!
+    - 3621 E Whitestone Blvd, Cedar Park, TX 78613
+    - '2017-10-10 03:47:46.32367'
+    - '2017-10-10 03:47:46.32367'
+    - 1
+    - 30.5398413
+    - -97.775396
+  - - 8
+    - Java Ranch Espresso Bar & Cafe
+    - Classy, Old Western Designed Coffee Shop with Friendly Employees and Good Coffee
+    - 114 E Main St, Fredericksburg, TX 78624
+    - '2017-10-10 03:48:06.970071'
+    - '2017-10-10 03:48:06.970071'
+    - 1
+    - 30.2749225
+    - -98.8715024
+  - - 9
+    - Katherine Fleischer Park
+    - Children's Play Area, Soccer Field, Picnic Area and More!
+    - 2106 Klattenhoff Dr, Austin, TX 78728
+    - '2017-10-10 03:48:28.733034'
+    - '2017-10-10 03:48:28.733034'
+    - 1
+    - 30.4422578
+    - -97.6789134
+  - - 10
+    - Little Land Play Gym & Pediatric Therapy
+    - An Awesome In-door Playground for all ages!
+    - '13776 US-183 #107, Austin, TX 78750'
+    - '2017-10-10 03:48:49.641749'
+    - '2017-10-10 03:48:49.641749'
+    - 1
+    - 30.4623287
+    - -97.7964253
+  - - 11
+    - Marcos Pizza
+    - Best Chain Pizza you can buy! Their Cheesy Bread is awesome!
+    - 2800 S Bagdad Rd, Leander, TX 78641
+    - '2017-10-10 03:49:20.491509'
+    - '2017-10-10 03:49:20.491509'
+    - 1
+    - 30.5403944
+    - -97.8488296
+  - - 12
+    - Moonie's Burger House
+    - Delicious Burger & Fries in a Great Family Restaurant
+    - 200 S Bell Blvd, Cedar Park, TX 78613
+    - '2017-10-10 03:49:40.010973'
+    - '2017-10-10 03:49:40.010973'
+    - 1
+    - 30.5080471
+    - -97.821953
+  - - 13
+    - Round Rock Donuts
+    - Delicious Donuts and Pastries. Yum!
+    - 106 W Liberty Ave, Round Rock, TX 78664
+    - '2017-10-10 03:50:00.034345'
+    - '2017-10-10 03:50:00.034345'
+    - 1
+    - 30.5095609
+    - -97.6799196
+  - - 14
+    - Thai Lao Orchid Restaurant
+    - Delicious Authentic Thai Food in a warm friendly environment!
+    - 116 Broadway St, San Antonio, TX 78205
+    - '2017-10-10 03:50:18.36271'
+    - '2017-10-10 03:50:18.36271'
+    - 1
+    - 29.4271597
+    - -98.4875814
+  - - 15
+    - The Boardwalk at Lady Bird Lake
+    - A Great Walk through Austin along the river. Perfect for Joggers, Dog Walking
+      and Families!
+    - 1820 S Lakeshore Blvd, Austin, TX 78741
+    - '2017-10-10 03:50:40.066256'
+    - '2017-10-10 03:50:40.066256'
+    - 1
+    - 30.2454448
+    - -97.7258908
+  - - 16
+    - VCA Lakeline Animal Hospital
+    - A Great Place to bring your Pet for all their Health Needs!
+    - 12010 Ranch Rd 620 N, Austin, TX 78750
+    - '2017-10-10 03:51:01.281619'
+    - '2017-10-10 03:51:01.281619'
+    - 1
+    - 30.4603876
+    - -97.8214175
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - thedreamersdream@gmail.com
+    - "$2a$11$UiqeQgrG00iQSkWG213equl.Cr4mQLfffu/l2WYx7dYfp8M15Pq0G"
+    - 
+    - 
+    - 
+    - 1
+    - '2017-10-10 03:23:23.197069'
+    - '2017-10-10 03:23:23.197069'
+    - 10.0.2.2
+    - 10.0.2.2
+    - '2017-10-10 03:23:23.194052'
+    - '2017-10-10 03:23:23.19854'
