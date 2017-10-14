@@ -11,6 +11,7 @@
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 20px;
+  overflow: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -116,4 +117,8 @@ blockquote:before {
 
 blockquote p {
   display: inline;
+}
+
+.form-group .control-label {
+width: 3.4em;
 }
