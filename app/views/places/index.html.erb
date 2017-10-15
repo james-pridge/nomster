@@ -5,12 +5,24 @@
   <i><%= place.address %></i><br /><br />
   <p><%= place.description %></p><br />
 
+
 <%if place.user.present? %>
 <small><%= place.user.email %></small>
 <% end %>
 
+<div class="col-12 col-sm-12">
+  <div class="row">
+<%if place.photos.present? %>
+<div class="img-responsive">
+  <%= image_tag src="https://pridge-nomster.s3.amazonaws.com/uploads/photo/picture/14/Cedar_Park_Staff8.jpg", :size => "300x250"%>
+  <% end %>
+</div>
+</div>
+</div>
+
+
 <% if place.comments.present? %>
-<div class="col-12">
+<div class="col-6">
   <blockquote>
     <% if place.comments.last.humanized_rating.present? %>
     <b><%= place.comments.last.humanized_rating %></b> -
@@ -33,4 +45,6 @@
     <%= will_paginate @places, container: false %>
   </div>
 </div>
+
+
 
