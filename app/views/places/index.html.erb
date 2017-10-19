@@ -1,47 +1,42 @@
-
 <% @places.each do |place| %>
 <div class="booyah-box col-10 offset-1">
   <h1><%= link_to place.name, place_path(place) %></h1><br />
   <i><%= place.address %></i><br /><br />
-  <p><%= place.description %></p><br />
+  <p><%= place.description %></p>
 
 
-<%if place.user.present? %>
-<small><%= place.user.email %></small>
-<% end %>
-
-<div class="col-12 col-sm-12">
-  <div class="row">
-<%if place.photos.present? %>
-<div class="img-responsive">
-  <%= image_tag src="https://pridge-nomster.s3.amazonaws.com/uploads/photo/picture/14/Cedar_Park_Staff8.jpg", :size => "300x250"%>
+  <%if place.user.present? %>
+    <small><%= place.user.email %></small>
   <% end %>
-</div>
-</div>
-</div>
 
+<br />
 
-<% if place.comments.present? %>
-<div class="col-6">
-  <blockquote>
+  <% if place.photos.present? %>
+    <br /><%= image_tag place.photos.last.picture, :class => "img-responsive img-fluid index-image", :size => "304x236" %>
+  <% end %>
+
+  
+  
+  <% if place.comments.present? %>
+  <div class="col-xs-6">
+    <blockquote>
     <% if place.comments.last.humanized_rating.present? %>
     <b><%= place.comments.last.humanized_rating %></b> -
     <% end %>
       <%= place.comments.last.message %> -
     <small><%= place.comments.last.user.email %></small>
-  </blockquote>
-</div>
-<% end %>
+    </blockquote>
+  </div>
+  <% end %>
+  </div>
+  <% end %>
 
-</div>
-<% end %>
-
- <div class="container">
+<div class="container">
   <div class="row">
-  <div class="digg_pagination offset-5">
-    <div class="page_info">
+    <div class="digg_pagination offset-5">
+      <div class="page_info">
       <%#= page_entries_info @places %>
-    </div>
+      </div>
     <%= will_paginate @places, container: false %>
   </div>
 </div>
