@@ -2,7 +2,7 @@
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-<%# Third picture indicator here%>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
@@ -14,10 +14,15 @@
     <div class="carousel-item">
      <%= image_tag 'slider2.jpg', class: 'd-block img-fluid' %>
       <div class="carousel-caption d-none d-md-block">
-        <h3>Looking for hotdogs?</h3>
+        <h3>Experience some amazing coffee</h3>
       </div>
     </div>
-<%# Third picture here%>
+    <div class="carousel-item">
+     <%= image_tag 'slider3.jpg', class: 'd-block img-fluid' %>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Travel the world</h3>
+      </div>
+    </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -28,6 +33,8 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+</div>
+
 
 
 <% @places.each do |place| %>
@@ -72,6 +79,3 @@
     <%= will_paginate @places, container: false %>
   </div>
 </div>
-
-
-

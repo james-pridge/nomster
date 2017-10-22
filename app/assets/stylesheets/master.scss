@@ -33,7 +33,6 @@ font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book An
   color: #543023;
   font-family: 'webfontregular', sans-serif;
   font-size: 26px;
-
 }
 
 .digg_pagination {
@@ -126,6 +125,40 @@ width: 3.4em;
 
 .img-responsive {
   box-shadow: 8px 8px 10px #aaa; 
-    
  }
 
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  max-height: 550px;
+  width: 100%;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+ } 
+
+
+.carousel-caption {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+h3, .h3 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+#.carousel-control-prev-icon, .carousel-control-next-icon {
+# width: 25px;
+# height: 25px;
+#}
