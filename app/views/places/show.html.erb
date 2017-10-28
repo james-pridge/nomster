@@ -1,5 +1,5 @@
 <div class="container-fluid">
-<div class="booyah-box col-10 offset-1">
+<div class="booyah-box img-responsive col-10 offset-1">
 <h1><%= @place.name %></h1>
 <br/><br/>
 <p><%= @place.description %></p>
@@ -66,8 +66,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl0iPHS6aeEax85cirXpWkwH7
 </div>
 </div>
 
-
-<div class="booyah-box col-12 col-sm-10 offset-sm-1 ">
+<div class="booyah-box img-responsive col-12 col-sm-10 offset-sm-1 ">
 <h1 class="float-left">Comments</h1>
 <!-- Comment Button trigger modal -->
 <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
@@ -95,8 +94,7 @@ Add a comment
 <br />
 </div>
 </div>
-
-
+<br />
 
 <!-- Photo Modal -->
 <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -122,14 +120,16 @@ Add a comment
   </div>
   </div>
 <br />
+
+
     <div class="col-10 offset-1">
-      <h1 class="float-left">Photo's</h1>
+      <h1 class="booyah-box img-responsive float-left">Photo's</h1>
         <div class="clear"></div>
-      <br />
-    </div>
+     </div>
+
 
 <% @place.photos.each do |photo| %>
-      <div class="booyah-box col-10 col-sm-5 offset-1">
+      <div class="booyah-box img-responsive col-10 col-sm-5 offset-1">
         <%= image_tag photo.picture, :class => "bottom img-fluid", :style => "height:auto;width:530px;" %>
           <div class="text-center caption">
           <%= photo.caption %>
@@ -141,3 +141,6 @@ Add a comment
 <% end %>
 <br />
 </div>
+
+
+
