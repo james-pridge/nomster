@@ -14,7 +14,7 @@
     <div class="carousel-item">
      <%= image_tag 'slider2.jpg', class: 'd-block img-fluid' %>
       <div class="carousel-caption d-none d-md-block">
-        <h3>Experience some amazing coffee</h3>
+        <h3>Experience some amazing coffee </h3>
       </div>
     </div>
     <div class="carousel-item">
@@ -54,10 +54,8 @@
     <br /><%= image_tag place.photos.last.picture, :class => "img-responsive img-fluid index-image", :size => "304x236" %>
   <% end %>
 
-  
-  
   <% if place.comments.present? %>
-  <div class="col-xs-6">
+  <div class="comment-margin col-xs-6">
     <blockquote>
     <% if place.comments.last.humanized_rating.present? %>
     <b><%= place.comments.last.humanized_rating %></b> -
@@ -72,7 +70,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="digg_pagination offset-5">
+    <div class="digg_pagination col-8 offset-3 col-sm-6 offset-sm-4">
       <div class="page_info">
       <%#= page_entries_info @places %>
       </div>

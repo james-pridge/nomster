@@ -153,13 +153,22 @@ h3, .h3 {
   font-weight: 100;
 }
 
-
 .carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
 }
 
-/*.carousel-control-prev-icon, .carousel-control-next-icon {
- width: 25px;
- height: 25px;
+ .caption {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
  }
- */
+
+ .bottom {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+ }
+
+.comment-margin {
+  margin-bottom: -13px;
+}
+
