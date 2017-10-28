@@ -4,69 +4,69 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active">
-      <%= image_tag 'slider1.jpg', class: 'd-block img-fluid' %>
-      <div class="carousel-caption d-none d-md-block">
-        <h3>Find the best pizza places</h3>
-      </div>
-    </div>
-    <div class="carousel-item">
-     <%= image_tag 'slider2.jpg', class: 'd-block img-fluid' %>
-      <div class="carousel-caption d-none d-md-block">
-        <h3>Experience some amazing coffee </h3>
-      </div>
-    </div>
-    <div class="carousel-item">
-     <%= image_tag 'slider3.jpg', class: 'd-block img-fluid' %>
-      <div class="carousel-caption d-none d-md-block">
-        <h3>Travel the world</h3>
-      </div>
+<div class="carousel-inner" role="listbox">
+  <div class="carousel-item active">
+    <%= image_tag 'slider1.jpg', class: 'd-block img-fluid' %>
+    <div class="carousel-caption d-none d-md-block">
+      <h3>Find the best pizza places</h3>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+  <div class="carousel-item">
+    <%= image_tag 'slider2.jpg', class: 'd-block img-fluid' %>
+    <div class="carousel-caption d-none d-md-block">
+      <h3>Experience some amazing coffee </h3>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <%= image_tag 'slider3.jpg', class: 'd-block img-fluid' %>
+    <div class="carousel-caption d-none d-md-block">
+      <h3>Travel the world</h3>
+    </div>
+  </div>
+</div>
+<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>
 </div>
 </div>
 
 
 
 <% @places.each do |place| %>
-<div class="booyah-box img-responsive col-10 offset-1">
-  <h1><%= link_to place.name, place_path(place) %></h1><br />
+  <div class="booyah-box img-responsive col-10 offset-1">
+    <h1><%= link_to place.name, place_path(place) %></h1><br />
   <i><%= place.address %></i><br /><br />
-  <p><%= place.description %></p>
+<p><%= place.description %></p>
 
 
-  <%if place.user.present? %>
-    <small><%= place.user.email %></small>
-  <% end %>
+<%if place.user.present? %>
+  <small><%= place.user.email %></small>
+<% end %>
 
 <br />
 
-  <% if place.photos.present? %>
-    <br /><%= image_tag place.photos.last.picture, :class => "img-responsive img-fluid index-image", :size => "304x236" %>
-  <% end %>
+<% if place.photos.present? %>
+  <br /><%= image_tag place.photos.last.picture, :class => "img-responsive img-fluid index-image", :size => "304x236" %>
+<% end %>
 
-  <% if place.comments.present? %>
+<% if place.comments.present? %>
   <div class="comment-margin col-xs-6">
     <blockquote>
-    <% if place.comments.last.humanized_rating.present? %>
-    <b><%= place.comments.last.humanized_rating %></b> -
-    <% end %>
-      <%= place.comments.last.message %> -
-    <small><%= place.comments.last.user.email %></small>
-    </blockquote>
-  </div>
+      <% if place.comments.last.humanized_rating.present? %>
+        <b><%= place.comments.last.humanized_rating %></b> -
+          <% end %>
+          <%= place.comments.last.message %> -
+        <small><%= place.comments.last.user.email %></small>
+      </blockquote>
+    </div>
   <% end %>
-  </div>
-  <% end %>
+</div>
+<% end %>
 
 <div class="container">
   <div class="row">
